@@ -5,9 +5,9 @@
 ### Front-End
 - [x] HTML
 - [x] CSS
-- [ ] JAVASCRIPT
-- [ ] BOOTSTRAP
-- [ ] JQUERY
+- [x] JAVASCRIPT
+- [x] BOOTSTRAP
+- [x] JQUERY
 - [ ] ANGULAR
 ### Back-End
 - [ ] NodeJS
