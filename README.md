@@ -15,5 +15,5 @@
 - [x] SQL
 - [x] No-SQL
 ### Gestão
-- [x] Métodos Ágeis
+- [ ] Métodos Ágeis
 
