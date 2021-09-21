@@ -10,10 +10,10 @@
 - [x] JQUERY
 - [ ] ANGULAR
 ### Back-End
-- [ ] NodeJS
+- [x] NodeJS
 ### Database
-- [ ] SQL
-- [ ] No-SQL
+- [x] SQL
+- [x] No-SQL
 ### Gestão
-- [ ] Métodos Ágeis
+- [x] Métodos Ágeis
 
