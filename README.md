@@ -4,9 +4,9 @@
 ## Conteúdo do Bootcamp
 ### Front-End
 - [x] HTML
-- [x] CSS
+- [x] CSS 
 - [x] JAVASCRIPT
-- [x] BOOTSTRAP
+- [x] BOOTSTRAP [Projeto](marianefreitas.github.io/projetoBootstrap/)
 - [x] JQUERY
 - [X] ANGULAR
 ### Back-End
