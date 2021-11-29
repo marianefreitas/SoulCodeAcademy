@@ -6,7 +6,7 @@
 - [x] HTML
 - [x] CSS 
 - [x] JAVASCRIPT
-- [x] BOOTSTRAP [Projeto](marianefreitas.github.io/projetoBootstrap/)
+- [x] BOOTSTRAP [Projeto](https://marianefreitas.github.io/projetoBootstrap/)
 - [x] JQUERY
 - [X] ANGULAR
 ### Back-End
