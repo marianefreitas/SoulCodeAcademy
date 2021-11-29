@@ -8,7 +8,7 @@
 - [x] JAVASCRIPT
 - [x] BOOTSTRAP
 - [x] JQUERY
-- [ ] ANGULAR
+- [X] ANGULAR
 ### Back-End
 - [x] NodeJS
 ### Database
