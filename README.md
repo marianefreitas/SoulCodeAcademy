@@ -8,7 +8,7 @@
 - [x] JAVASCRIPT [Prática](https://marianefreitas.github.io/projetojavascript/)
 - [x] BOOTSTRAP [Prática](https://marianefreitas.github.io/projetoBootstrap/)
 - [x] JQUERY [Prática](https://marianefreitas.github.io/projetojquery/)
-- [X] ANGULAR [Prática]()
+- [X] ANGULAR [Prática](https://angular-projeto.herokuapp.com/)
 ### Back-End
 - [x] NodeJS
 ### Database
