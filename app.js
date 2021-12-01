@@ -10,10 +10,10 @@ const port = 5000;
 mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/app-heroku'));
+app.use(express.static('./dist/biblioeteca3'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/app-heroku/'}),
+    res.sendFile('index.html', {root: 'dist/biblioteca3/'}),
 );
 
 app.set("view engine","ejs")
