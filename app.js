@@ -3,7 +3,7 @@ const app = express();
 
 var mongoose = require("mongoose");
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
