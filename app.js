@@ -5,7 +5,9 @@ var mongoose = require("mongoose");
 
 const port = 5000;
 
-mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+const uri = process.env.MONGODB_URI;
+
+// mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.set("view engine","ejs")
 app.set("views",__dirname+"/views")
@@ -15,6 +17,7 @@ app.use(express.json())
 
 
 app.use(express.static("public"));
+app.use(express.static(__dirname + "/dist/biblioteca3"));
 
 const livrosRouter = require("./routers/livros-router");
 const usuariosRouter = require("./routers/usuarios-router")
