@@ -1,0 +1,87 @@
+<%- include ("../partials/header"); %>
+    <title>Listagem de Usuários</title>
+    </head>
+
+    <body>
+        <section class="container">
+
+            <div class="">
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <h1> Lista de Usuários</h1>
+                    </div>
+                    <div class="col-2">
+                        <a href="/biblioteca/listandoLivros"><button class="btn btn-primary">Livros</button></a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/biblioteca/listandoUsuarios"><button class="btn btn-primary">Todos os
+                                Usuários</button></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="/biblioteca/cadastrandoUsuarios"><button class="btn btn-primary">Novo
+                                Usuário</button></a>
+                    </div>
+                    <div class="col-3">
+                        <form action="/biblioteca/pesquisandoUsuarios" method="GET">
+                            <div class="input-group">
+                                <input class="form-control" type="search" id="search" name="search">
+                                <button class="btn btn-light" type="submit">Pesquisar</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="row mt-1">
+                    <div class="col">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nome:</th>
+                                    <th>Senha:</th>
+                                    <th>Tipo de Permissão</th>
+                                    <th>Ação</th>
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% if (lista_usuarios=="" ) { %>
+                                    <tr>
+                                        <td colspan="5" class="alert-warning">Nenhum usuário cadastrado</td>
+                                    </tr>
+
+                                    <% } else { lista_usuarios.forEach(function(usuario) {%>
+                                        <tr>
+                                            <td>
+                                                <%= usuario.Name %>
+                                            </td>
+                                            <td>
+                                                <%= usuario.Password %>
+                                            </td>
+                                            <td class="text-center">
+                                                <%= usuario.Pass %>
+                                            </td>
+
+
+                                            <td>
+                                                <a href="/biblioteca/editandoUsuarios/<%= usuario._id %>"
+                                                    class="btn btn-warning">Editar</a>
+                                            </td>
+                                            <td>
+                                                <a href="/biblioteca/deletandoUsuarios/<%= usuario._id %>"
+                                                    class="btn btn-danger">Excluir</a>
+                                            </td>
+                                        </tr>
+
+                                        <% }) %>
+                                            <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <%- include ("../partials/footer"); %>
