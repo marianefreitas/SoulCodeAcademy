@@ -5,9 +5,16 @@ var mongoose = require("mongoose");
 
 const port = 5000;
 
-const uri = process.env.MONGODB_URI;
 
-// mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+
+mongoose.connect("mongodb+srv://mariane_freitas:mariane_freitas@cluster0.qtwy6.mongodb.net/biblioteca?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/app-heroku'));
+
+app.get('/*', (req, res) =>
+    res.sendFile('index.html', {root: 'dist/app-heroku/'}),
+);
 
 app.set("view engine","ejs")
 app.set("views",__dirname+"/views")
